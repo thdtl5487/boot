@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediaQuery Review</title>
+</head>
+<style>
+    body{
+        background: rgb(154, 167, 126);
+        color: violet;
+    }
+
+    h2::after{
+        content: ' : Default WebPage';
+    }
+
+    @media all and (max-width : 720px) and (min-width : 801px){
+        body{
+            background: olivedrab;
+            
+        }
+
+        h1{
+            color: red;
+        }
+
+        h2::after{
+            content: ' : under 720px screen';
+        }
+    }
+
+    @media(max-width : 360px){
+        body{
+            background: aquamarine;
+
+        }
+        h2::after{
+            content: ' : under 360px screen';
+        }
+    }
+</style>
+<body>
+
+    <h1>Media Query</h1>
+    <br><br>
+    <h2>Insert append Text</h2>
+
+    
+</body>
+</html>
